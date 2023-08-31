@@ -1,0 +1,87 @@
+1)
+numero = float(input("Digite um número: "))
+
+if numero > 0:
+    print("O número é positivo.")
+elif numero < 0:
+    print("O número é negativo.")
+else:
+    print("O número é zero.")
+------------------------------------------------------
+2)
+numero = int(input("Digite um número: "))
+
+if numero % 2 == 0:
+    print("O número é par.")
+else:
+    print("O número é ímpar.")
+--------------------------------------------------------
+3)
+nota = float(input("Digite a nota do aluno: "))
+
+if nota >= 7:
+    print("Aluno aprovado!")
+else:
+    print("Aluno reprovado.")
+-----------------------------------------------------------
+4)
+ano = int(input("Digite um ano: "))
+
+if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+    print("O ano é bissexto.")
+else:
+    print("O ano não é bissexto.")
+------------------------------------------------------------------
+5)
+lado1 = float(input("Digite o comprimento do primeiro lado do triângulo: "))
+lado2 = float(input("Digite o comprimento do segundo lado do triângulo: "))
+lado3 = float(input("Digite o comprimento do terceiro lado do triângulo: "))
+
+if lado1 == lado2 == lado3:
+    print("O triângulo é equilátero.")
+elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+    print("O triângulo é isósceles.")
+else:
+    print("O triângulo é escaleno.")
+----------------------------------------------------------------------------------------
+6)
+idade = int(input("Digite a idade da pessoa: "))
+
+if idade >= 18:
+    print("A pessoa pode votar.")
+else:
+    print("A pessoa não pode votar.")
+------------------------------------------------------------------------------------------
+7)
+x = float(input("Digite a coordenada x do ponto: "))
+y = float(input("Digite a coordenada y do ponto: "))
+
+if x > 0 and y > 0:
+    print("O ponto está no primeiro quadrante.")
+elif x < 0 and y > 0:
+    print("O ponto está no segundo quadrante.")
+elif x < 0 and y < 0:
+    print("O ponto está no terceiro quadrante.")
+elif x > 0 and y < 0:
+    print("O ponto está no quarto quadrante.")
+elif x == 0 and y != 0:
+    print("O ponto está sobre o eixo Y.")
+elif x != 0 and y == 0:
+    print("O ponto está sobre o eixo X.")
+else:
+    print("O ponto está na origem (0, 0).")
+------------------------------------------------------------------------------------------------
+8)
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
+
+maior = num1
+
+if num2 > maior:
+    maior = num2
+if num3 > maior:
+    maior = num3
+
+print(f"O maior número é: {maior}")
+-------------------------------------------------------------------------------------------------
